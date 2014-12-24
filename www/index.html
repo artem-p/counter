@@ -7,9 +7,16 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <link rel="import" href="components/bower_components/polymer/polymer.html">
+        <!-- 1. Load platform support before any code that touches the DOM. -->
+        <script src="components/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+        <!-- 2. Load the component using an HTML Import -->
+        <link rel="import" href="elements/my-element.html">
+        <title>Счетчик</title>
     </head>
     <body>
+        <!-- 3. Declare the element by its tag. -->
+        <my-element></my-element>
         
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
