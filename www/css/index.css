@@ -38,3 +38,30 @@ html, body {
                 right: 20px;
                 bottom: 20px;
             }
+
+core-header-panel {
+  background: white;
+}
+core-toolbar {
+  background-color: #03A9F4;
+}
+p {
+  margin: 20px;
+  padding: 80px 20px;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+paper-button.colored {
+    color: #4285f4;
+}
+
+paper-button[raised].colored {
+    background: #4285f4;
+    color: #fff;
+}
+
+/*.counter {*/
+    /*font-size: 12em;*/
+    /*text-align: center;*/
+/*}*/
