@@ -1,11 +1,13 @@
 //$("#counter").fitText();
 var m_counter = $("#counter");
 var m_count = 0;
-var increaseButton = $("#increaseButton");
+var btnIncrease = $("#increaseButton");
+var btnClear = $("#btnClear");
 
 updateCounter();
 
-increaseButton.click(increaseCounter);
+btnIncrease.click(increaseCounter);
+btnClear.click(clearCounter)
 
 function updateCounter() {
     var nSymbol = (m_count+"").length;
@@ -30,5 +32,11 @@ function setFontSize(nSymbol) {
 function increaseCounter() {
     //  Увеличиваем счетчик на 1
     m_count++;
+    updateCounter();
+}
+
+function clearCounter() {
+    //  Сбрасываем счетчик на 0
+    m_count = 0;
     updateCounter();
 }
