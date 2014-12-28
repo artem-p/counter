@@ -95,3 +95,13 @@ header {
     position: absolute;
     bottom: 90px
 }
+
+/*.btn-clear {*/
+    /*position: absolute;*/
+    /*top: 5%;*/
+/*}*/
+
+.btn-clear {
+    position: absolute;
+    bottom: 170px
+}

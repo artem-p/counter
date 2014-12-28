@@ -41,14 +41,16 @@
       <core-header-panel flex>
         <core-toolbar id="mainheader">      
           <span flex>Счетчик</span>
+            <core-icon-button id="btnClear" icon="refresh">сбросить</core-icon-button>
         </core-toolbar>
 
             <p class="counter" id="counter">0</p>
 
-          <paper-button id="btnClear" raised>сбросить</paper-button>
+          <!--<paper-button class="btn-clear" id="btnClear" raised>сбросить</paper-button>-->
       </core-header-panel>
 
       <div>
+          <!--<paper-fab class="btn-clear" icon="clear" id="btnClear"></paper-fab>-->
           <paper-fab class="btn-add" icon="add" id="increaseButton"></paper-fab>
           <paper-fab icon="remove" id="btnDecrease"></paper-fab>
       </div>
