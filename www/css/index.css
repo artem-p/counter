@@ -42,24 +42,19 @@ html, body {
 core-header-panel {
     background: white;
 }
-core-toolbar {
-  background-color: #03A9F4;
+core-toolbar  {
+  /*background-color: #03A9F4;*/
+    /*background-color: ;*/
 }
 p {
   margin: 20px;
   padding: 80px 20px;
   border-radius: 20px;
-  background-color: #eee;
+  /*background-color: #eee;*/
 }
 
-paper-button.colored {
-    color: #4285f4;
-}
 
-paper-button[raised].colored {
-    background: #4285f4;
-    color: #fff;
-}
+
 
 .counter {
     /*background: rgba(0,0,0,0.2);*/

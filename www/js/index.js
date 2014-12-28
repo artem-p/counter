@@ -21,7 +21,7 @@ function updateCounter() {
 
 function setFontSize(nSymbol) {
     //  Изменяем размер шрифта при изменении количества символов
-    var symbolSize = ['8em', '8em', '8em', '6em', '6em', '5em', '4em', '3em', '2em', '1em'];
+    var symbolSize = ['14em', '14em', '12em', '8em', '7em', '6em', '5em', '4em', '3em', '2em'];
     //  Размер символов. Индекс массива - количество символов. С увеличением количества уменьшается размер
     var defaultSize = '1em';
 

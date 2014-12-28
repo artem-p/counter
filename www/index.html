@@ -31,7 +31,9 @@
         <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 
 
+        <link rel="stylesheet" type="text/css" href="css/palette.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+
         <script src="lib/jquery-2.1.3.min.js"></script>
         <!--<script src="lib/FitText.js-master/jquery.fittext.js"></script>-->
     </head>
@@ -39,20 +41,20 @@
 
      <body fullbleed vertical layout unresolved>
       <core-header-panel flex>
-        <core-toolbar id="mainheader">      
-          <span flex>Счетчик</span>
-            <core-icon-button id="btnClear" icon="refresh">сбросить</core-icon-button>
+        <core-toolbar class="default-primary-color" id="mainheader">
+          <span class="text-primary-color" flex>Счетчик</span>
+            <core-icon-button class="text-primary-color" id="btnClear" icon="refresh">сбросить</core-icon-button>
         </core-toolbar>
 
-            <p class="counter" id="counter">0</p>
+            <p class="counter" id="counter"></p>
 
           <!--<paper-button class="btn-clear" id="btnClear" raised>сбросить</paper-button>-->
       </core-header-panel>
 
       <div>
           <!--<paper-fab class="btn-clear" icon="clear" id="btnClear"></paper-fab>-->
-          <paper-fab class="btn-add" icon="add" id="increaseButton"></paper-fab>
-          <paper-fab icon="remove" id="btnDecrease"></paper-fab>
+          <paper-fab class="btn-add accent-color" icon="add" id="increaseButton"></paper-fab>
+          <paper-fab class="accent-color" icon="remove" id="btnDecrease"></paper-fab>
       </div>
 
       <script type="text/javascript" src="js/index.js"></script>
