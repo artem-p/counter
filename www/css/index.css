@@ -90,3 +90,8 @@ header {
     width: 100%;
     margin:0px auto;
 }
+
+.btn-add {
+    position: absolute;
+    bottom: 90px
+}

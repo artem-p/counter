@@ -2,12 +2,16 @@
 var m_counter = $("#counter");
 var m_count = 0;
 var btnIncrease = $("#increaseButton");
+var btnDecrease = $("#btnDecrease");
 var btnClear = $("#btnClear");
+
+btnIncrease.click(increaseCounter);
+btnDecrease.click(decreaseCounter);
+btnClear.click(clearCounter)
 
 updateCounter();
 
-btnIncrease.click(increaseCounter);
-btnClear.click(clearCounter)
+
 
 function updateCounter() {
     var nSymbol = (m_count+"").length;
@@ -32,6 +36,12 @@ function setFontSize(nSymbol) {
 function increaseCounter() {
     //  Увеличиваем счетчик на 1
     m_count++;
+    updateCounter();
+}
+
+function decreaseCounter() {
+    //  Уменьшаем счетчик на 1
+    m_count--;
     updateCounter();
 }
 
