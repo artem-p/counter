@@ -9,6 +9,7 @@ btnIncrease.click(increaseCounter);
 btnDecrease.click(decreaseCounter);
 btnClear.click(clearCounter)
 
+if(localStorage.count) m_count = localStorage.count;
 updateCounter();
 
 
@@ -17,11 +18,11 @@ function updateCounter() {
     var nSymbol = (m_count+"").length;
     setFontSize(nSymbol);
     m_counter.html(m_count);
+    localStorage.count = m_count;
 }
 
 function setFontSize(nSymbol) {
     //  Изменяем размер шрифта при изменении количества символов
-    //  todo разобраться со шрифтом. Отступы параграфа. Чтоб было по центру
     var symbolSize = ['14em', '14em', '11em', '7em', '6em', '5em', '4em', '3em', '2em', '1em'];
     //  Размер символов. Индекс массива - количество символов. С увеличением количества уменьшается размер
     var defaultSize = '1em';
