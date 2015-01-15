@@ -1,15 +1,36 @@
 //$("#counter").fitText();
 var m_counter = $("#counter");
 var m_count = 0;
+var RU_LANG = 'ru';
+var EN_LANG = 'en';
+
+
 var btnIncrease = $("#increaseButton");
 var btnDecrease = $("#btnDecrease");
 var btnClear = $("#btnClear");
+var mainHeader = $("#mainHeader");
+
 
 btnIncrease.click(increaseCounter);
 btnDecrease.click(decreaseCounter);
-btnClear.click(clearCounter)
+btnClear.click(clearCounter);
 
+
+//  Устанавливаем значение счетчика, если оно сохранялось ранее
 if(localStorage.count) m_count = localStorage.count;
+
+//  Определяем язык
+var sLang = window.navigator.language;
+if(sLang.indexOf(RU_LANG) != -1 ) {
+    g_text = RU_TEXT;
+} else {
+    g_text = EN_TEXT;
+}
+
+//  Устанавливаем текст
+mainHeader.text(g_text.header);
+btnClear.text(g_text.clear);
+
 updateCounter();
 
 

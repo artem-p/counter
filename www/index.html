@@ -13,8 +13,9 @@
         <!-- 2. Load the component using an HTML Import -->
 <!--        <link rel="import" href="elements/my-element.html">-->
 <!--        <title>Счетчик</title>-->
-        <title>Test Project</title>
+        <title>Counter</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />-->
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
@@ -27,7 +28,6 @@
         <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
         <link rel="import" href="bower_components/core-menu/core-menu.html">
         <link rel="import" href="bower_components/core-item/core-item.html">
-        <link rel="import" href="bower_components/paper-toast/paper-toast.html">
         <link rel="import" href="bower_components/paper-fab/paper-fab.html">
 
 
@@ -42,8 +42,8 @@
      <body fullbleed vertical layout unresolved>
       <core-header-panel flex>
         <core-toolbar class="default-primary-color" id="mainheader">
-          <span class="text-primary-color" flex>Счетчик</span>
-            <core-icon-button class="text-primary-color" id="btnClear" icon="refresh">сбросить</core-icon-button>
+          <span id = 'mainHeader' class="text-primary-color" flex></span>
+            <core-icon-button class="text-primary-color" id="btnClear" icon="refresh"></core-icon-button>
         </core-toolbar>
 
             <p class="counter primary-text-color" id="counter"></p>
@@ -57,6 +57,7 @@
           <paper-fab class="accent-color" icon="remove" id="btnDecrease"></paper-fab>
       </div>
 
+      <script type="text/javascript" src="js/localization.js"></script>
       <script type="text/javascript" src="js/index.js"></script>
       <script type="text/javascript" src="cordova.js"></script>
 
